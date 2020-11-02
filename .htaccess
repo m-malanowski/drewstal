@@ -1,0 +1,19 @@
+RewriteEngine On
+RewriteBase /
+
+# Redirect to HTTPS without www
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [L,NE,R=301]
+
+# Custom 404
+ErrorDocument 404 404/404.html
+
+# Disable server signature
+ServerSignature Off
+
+# One month for most static assets
+<filesMatch ".(css|jpg|jpeg|png|gif|js|ico)$">
+Header set Cache-Control "max-age=604800, public"
+</filesMatch>

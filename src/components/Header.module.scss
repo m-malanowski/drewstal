@@ -1,0 +1,125 @@
+
+header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  padding:  50px 0;
+  max-width: 85%;
+  //border: 10px solid red;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0%);
+
+  .header-inner {
+    //padding: 0 15px;
+    display: flex;
+    //align-items: center;
+    justify-content: space-between;
+    .logo {
+      letter-spacing: 2px;
+      color: #fff !important;
+      font-family: var(--font-primary-bold);
+      font-size: 20px;
+      font-weight: bold;
+      a {
+        transition: all .2s ease-in-out;
+        color: var(--main-color) !important;
+
+        &:hover {
+          color: var(--main-color) !important;
+          text-decoration: none !important;
+        }
+      }
+    }
+
+
+    nav {
+      ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        .notAllowed{
+          &:hover{
+            cursor: not-allowed !important;
+          }
+        }
+        li {
+          font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1900 - 320)));
+          list-style: none;
+          margin: 0 calc(8px + (25 - 8) * ((100vw - 320px) / (1900 - 320)));
+          font-family: var(--font-primary);
+
+          .link {
+            position: relative;
+            transition: clip-path 275ms ease;
+            &:hover span::before, &:focus span::before {
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
+            }
+            span {
+              position: relative;
+              display: inline-block;
+              color: inherit;
+
+              &::before {
+                position: absolute;
+                content: attr(data-content);
+                color: rgba(255,255,255, 1);
+
+                //text-decoration: underline;
+                //text-decoration-color: var(--main-color);
+                clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+                transition: clip-path 275ms ease;
+              }
+            }
+          }
+          a,p {
+            text-transform: capitalize;
+            text-decoration: none;
+            //color: rgba(255,255,255, .9);
+            color: rgba(255,255,255, .8) !important;
+
+            transition: all .2s ease-in-out;
+
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 700px) {
+  header{
+    max-width: 100%;
+    padding: 25px 0;
+
+    .header-inner {
+      display: block;
+      .logo{
+        text-align: center;
+        margin-bottom: 15px;
+        font-weight: bold;
+      }
+      nav {
+      display: flex;
+      justify-content: center;
+        ul {
+          li {
+            &:last-of-type {
+              padding-left: 0!important;
+            }
+              &.btn {
+              a, p {
+                color: #fff;
+                padding: 0px 8px;
+                border-radius: 0px;
+                border: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
