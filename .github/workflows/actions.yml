@@ -13,7 +13,7 @@ jobs:
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@master
         with:
-          host: 94.152.11.3
+          host: drewstal.tech
           username: h792087
           key: ${{ secrets.PRIV_DREWSTAL }}
           port: 22
