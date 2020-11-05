@@ -1,6 +1,10 @@
 # This is a basic workflow to help you get started with Actions
 - name: Repository Dispatch
   uses: peter-evans/repository-dispatch@v1.1.2
+  with:
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          repository: username/my-repo
+          event-type: my-event
 ---
 
 # Controls when the action will run. Triggers the workflow on push or pull request
