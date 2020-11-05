@@ -18,5 +18,6 @@ jobs:
          password: paolo2606
          port: 22
          use_insecure_cipher: true 
+         key:  ${{ secrets.PRIV_DREWSTAL }}
          script: ls
 
