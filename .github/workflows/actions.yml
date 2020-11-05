@@ -9,7 +9,6 @@ with:
 ---
 
 name: CI
-name: Repository Dispatch
 on:
   repository_dispatch:
     types: [wordpress]
