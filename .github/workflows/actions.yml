@@ -5,6 +5,7 @@ with:
   token:  7c9f21a941d03b6bf2466ef6e05d6f7530b1d8ee
   repository: m-malanowski/drewstal
   event-type: wordpress
+  client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
 ---
 
 name: CI
