@@ -14,5 +14,5 @@ jobs:
         with:
           hosts: 'h792087@94.152.11.3'
           privateKey: ${{ secrets.PRIV_DREWSTAL }}
-          command:  touch elo.txt
+          command:  ls -lah
 
