@@ -13,7 +13,7 @@ jobs:
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@master
         with:
-         host: 94.152.11.3
+         host: 94.152.11.32
          username: h792087
          port: 22
          use_insecure_cipher: true 
