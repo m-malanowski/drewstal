@@ -6,4 +6,7 @@ with:
   repository: m-malanowski/drewstal
   event-type: wordpress
   client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
+on:
+  repository_dispatch:
+    types: [wordpress]
 ---
