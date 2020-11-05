@@ -1,5 +1,5 @@
     name: Repository Dispatch
         uses: m-malanowski/repository-dispatch@v1
         with:
-          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          token: 51085af31342db4413a246dfd2a8163a0e962c27
           event-type: wordpress
