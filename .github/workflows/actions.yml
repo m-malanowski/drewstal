@@ -10,10 +10,12 @@ jobs:
         with:
           ref: ${{ github.event.client_payload.ref }}
       - run: echo ${{ github.event.client_payload.sha }}
-      - uses: JimCronqvist/action-ssh@master
+      - name: executing remote ssh commands using password
+        uses: appleboy/ssh-action@master
         with:
-          hosts: 'h792087@94.152.11.3'
-          privateKey: ${{ secrets.PRIV_DREWSTAL }}
-          debug: true 
-          command:  ls -lah
+          host: 94.152.11.3
+          username: h792087
+          key: ${{ secrets.PRIV_DREWSTAL }}
+          port: 22
+          script: ls
 
