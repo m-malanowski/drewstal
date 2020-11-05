@@ -11,9 +11,10 @@ jobs:
           ref: ${{ github.event.client_payload.ref }}
       - run: echo ${{ github.event.client_payload.sha }}
       - name: executing remote ssh commands using password
-        uses: JimCronqvist/action-ssh@master
+        uses: fifsky/ssh-action@master
         with:
-            hosts: 'h792087@94.152.11.3'
-            privateKey: ${{ secrets.PRIV_DREWSTAL }}
+            host: '94.152.11.3'
+            user:  h792087
+            key: ${{ secrets.PRIV_DREWSTAL }}
             command: ls -lah
 
