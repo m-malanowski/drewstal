@@ -1,5 +1,6 @@
-    name: Repository Dispatch
-        uses: m-malanowski/repository-dispatch@v1
-        with:
-          token:  7c9f21a941d03b6bf2466ef6e05d6f7530b1d8ee
-          event-type: wordpress
+ - name: Repository Dispatch
+   uses: peter-evans/repository-dispatch@v1
+   with:
+    token: ${{ secrets.REPO_ACCESS_TOKEN }}
+    repository: username/my-repo
+    event-type: my-event
