@@ -7,6 +7,17 @@ steps:
    repository: m-malanowski/drewstal
    event-type: wordpress
    client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
+   on:
+  repository_dispatch:
+    types: [my-event]
+  jobs:
+   myEvent:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.client_payload.ref }}
+      - run: echo ${{ github.event.client_payload.sha }}
 ---
 name: Repository Dispatch
 on:
