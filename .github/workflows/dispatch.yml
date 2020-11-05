@@ -9,7 +9,7 @@ steps:
    client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
   on:
     repository_dispatch:
-    types: [my-event]
+     types: [my-event]
   jobs:
    myEvent:
     runs-on: ubuntu-latest
