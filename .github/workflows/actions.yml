@@ -15,7 +15,6 @@ jobs:
         with:
          host: 94.152.11.3
          username: h792087
-         password: paolo2606
          port: 22
          use_insecure_cipher: true 
          key:  ${{ secrets.PRIV_DREWSTAL }}
