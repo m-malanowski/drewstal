@@ -17,5 +17,6 @@ jobs:
          username: h792087
          password: paolo2606
          port: 22
+         use_insecure_cipher: true 
          script: ls
 
