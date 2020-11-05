@@ -13,10 +13,10 @@ jobs:
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@master
         with:
-         host: 188.40.69.215
-         username: alterloc
-         port: 59184
+         host: 94.152.11.3
+         username: h792087
+         port: 22
          use_insecure_cipher: true 
-         password:  Dx4BEqt$J55uNpfZd
+         password: paolo2606
          script: ls
 
