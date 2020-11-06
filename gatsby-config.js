@@ -32,8 +32,10 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        baseUrl: `drewstal.tech/backend/index.php`,
-        protocol: `http`,
+        baseUrl: process.env.API_URL,
+        // baseUrl: `drewstal.tech/backend/index.php`,
+        // baseUrl: `localhost/mysite.com/index.php`,
+        protocol: process.env.API_PROTOCOL,
         hostingWPCOM: false,
         restApiRoutePrefix: "wp-json",
       },
