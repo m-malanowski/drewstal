@@ -74,7 +74,7 @@ body {
   --font-primary-light: Suisse-Light;
   --main-color: #fff;
   --secondary-coolor: #767676;
-
+  color: var(--main-color) !important;
   //@include for-phone-only {
   //  display: none;
   //}
@@ -703,8 +703,28 @@ post {
   }
 }
 
+.section-policy .content{
+  font-size: calc(16px + (16 - 16) * ((100vw - 320px) / (1900 - 320)));
+  padding: 10rem 0;
+  max-width: 60%;
+  h2{
+    font-family: var(--font-primary);
+    font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1900 - 320)));
+    padding: 1rem 0;
+  }
+  a{
+    color: var(--main-color);
+  }
+  @include for-phone-only {
+    max-width: 100%;
+  }
+  @include for-tablet-landscape-up {
+    max-width: 100%;
+  }
 
-.section-products, .section-contact, .section-house-single {
+}
+
+.section-products, .section-contact, .section-house-single, .section-policy {
   max-width: 85%;
   margin: 0 auto;
   padding-top: 10rem;
@@ -736,6 +756,8 @@ post {
       text-transform: uppercase;
     }
   }
+
+
 
 
   .header-contact-info {

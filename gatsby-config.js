@@ -3,6 +3,9 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
+require("dotenv").config({
+  path: '.env'
+})
 
 module.exports = {
   /* Your site config here */
@@ -29,15 +32,18 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        baseUrl: `drewstal.tech/backend/index.php`,
-        protocol: `http`,
+        baseUrl: process.env.API_URL,
+        // baseUrl: `drewstal.tech/backend/index.php`,
+        // baseUrl: `localhost/mysite.com/index.php`,
+        protocol: process.env.API_PROTOCOL,
         hostingWPCOM: false,
         restApiRoutePrefix: "wp-json",
       },
     },
-    `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-react-helmet",
     "gatsby-plugin-robots-txt",
-    `gatsby-plugin-netlify`,
+    "gatsby-plugin-netlify",
+    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-plugin-netlify-cache",
       options: {

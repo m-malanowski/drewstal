@@ -1,5 +1,6 @@
 import React from 'react';
 import footerStyles from "./Footer.module.scss"
+import {Link} from "gatsby";
 
 const Footer = () => (
     <footer className={footerStyles.footer}>
@@ -9,7 +10,9 @@ const Footer = () => (
                 <div className={footerStyles.logo}><a href="http://drewstal.pl">DREWSTAL.</a></div>
                 <ul>
                     <li><a target="_blank" rel="noreferrer" href="https://lumina.studio">lumina.studio</a></li>
-                    <li><a href="#">Polityka prywatności</a></li>
+                    <li>
+                        <Link to="/polityka-prywatnosci">Polityka prywatności</Link>
+                    </li>
                 </ul>
                 <ul>
                     <li >
