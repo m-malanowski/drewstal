@@ -85,7 +85,7 @@ const BlogpostLayout = ({data}) => {
                                     <p>Kondygnacje:</p>
                                 </div>
                                 <div className="">
-                                    <div className="" dangerouslySetInnerHTML={{__html: post.acf.area}}/>
+                                    <div className="" dangerouslySetInnerHTML={{__html: post.acf.storeys}}/>
                                 </div>
                             </div>
 
@@ -94,7 +94,7 @@ const BlogpostLayout = ({data}) => {
                                     <p>Wymiary domku:</p>
                                 </div>
                                 <div className="">
-                                    <div className="" dangerouslySetInnerHTML={{__html: post.acf.area}}/>
+                                    <div className="" dangerouslySetInnerHTML={{__html: post.acf.dimensions}}/>
                                 </div>
                             </div>
 
@@ -103,7 +103,7 @@ const BlogpostLayout = ({data}) => {
                                     <p>Wysokość ściany:</p>
                                 </div>
                                 <div className="">
-                                    <div className="" dangerouslySetInnerHTML={{__html: post.acf.area}}/>
+                                    <div className="" dangerouslySetInnerHTML={{__html: post.acf.wall_height}}/>
                                 </div>
                             </div>
 
@@ -112,7 +112,7 @@ const BlogpostLayout = ({data}) => {
                                     <p>Wysokość szczytu:</p>
                                 </div>
                                 <div className="">
-                                    <div className="" dangerouslySetInnerHTML={{__html: post.acf.area}}/>
+                                    <div className="" dangerouslySetInnerHTML={{__html: post.acf.top_height}}/>
                                 </div>
                             </div>
 
@@ -160,6 +160,10 @@ export const query = graphql`
       }
       acf{
         area
+        storeys
+        dimensions
+        wall_height
+        top_height
       }
       categories {
         name
