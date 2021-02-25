@@ -17,14 +17,11 @@ const IndexPage = () => {
 
     return (
         <>
-            <SEO title="Nowoczesne Domki Letniskowe Drewniane | Gotowe Domki Całoroczne | DREWSTAL"
+            <SEO title="🏠️ &nbsp; Nowoczesne Domki Letniskowe Drewniane | Gotowe Domki Całoroczne | DREWSTAL"
                  description="Nowoczesne domki letniskowe i całoroczne drewniane, gotowe domki oraz na zgłoszenie i pod wymiar. Szybkie terminy realizacji, elastyczność. Sprawdź!"
             />
 
             <section className="section-hero">
-                {/*<div className="overlay"></div>*/}
-                {/*<div className="gradient top-gradient"></div>*/}
-
                 <div className="index-header">
                     <div className="welcome-text-container">
                         <motion.h2
