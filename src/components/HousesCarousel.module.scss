@@ -14,7 +14,10 @@
   padding: 10rem 0 0 0;
   margin-bottom: 10rem;
   position: relative;
-
+  user-select: none;
+  a {
+    outline: 0;
+  }
   .section-houses-counter{
     font-size: calc(18px + (50 - 18) * ((100vw - 320px) / (1900 - 320)));
     font-family: var(--font-secondary-bold);
@@ -75,12 +78,12 @@
     }
 
     h3{
-      font-size: calc(18px + (120 - 18) * ((100vw - 320px) / (1900 - 320)));
-      font-family: var(--font-secondary-bold);
+      font-size: calc(18px + (80 - 18) * ((100vw - 320px) / (1900 - 320)));
+      font-family: var(--font-secondary);
       text-transform: uppercase;
       line-height: 1.0;
       position: relative;
-      font-weight: bold;
+      //font-weight: bold;
       text-align: center;
       padding: 2.5rem 6rem;
 
@@ -100,11 +103,15 @@
 
     img{
       width: calc(420px + (850 - 420) * ((100vw - 320px) / (1900 - 320)));
-      height: auto;
+      height: 500px;
       opacity: 0.5;
-
+      -o-object-fit: cover;
+      object-fit: cover;
+      -o-object-position: center center;
+      object-position: center center;
       @include for-phone-only{
         width: calc(300px + (800 - 300) * ((100vw - 320px) / (1900 - 320)));
+        height: 250px;
       }
     }
 

@@ -1,34 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc325b4a-56e8-4f4b-b7e3-f245d3a01a2f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/git-actions.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/polityka-prywatnosci.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+    <list default="true" id="0e295858-4818-4f32-9398-ceb5a3714e94" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/drewStalGatsbyWordPress.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/drewStalGatsbyWordPress.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-ssr.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-ssr.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HousesCarousel.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HousesCarousel.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/kontakt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/kontakt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/o-nas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/o-nas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/polityka-prywatnosci.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/polityka-prywatnosci.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,52 +27,45 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1k8pKqsG3a7dfneX7LJZPkYy4kT" />
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1n4NSRVn5E2ymX8O2uBPm49RkAM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cc325b4a-56e8-4f4b-b7e3-f245d3a01a2f" name="Default Changelist" comment="" />
-      <created>1605092011770</created>
+      <changelist id="0e295858-4818-4f32-9398-ceb5a3714e94" name="Default Changelist" comment="" />
+      <created>1610645402599</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1605092011770</updated>
-      <workItem from="1605092013176" duration="804000" />
-      <workItem from="1605112022137" duration="3836000" />
+      <updated>1610645402599</updated>
+      <workItem from="1610645407083" duration="5561000" />
+      <workItem from="1610704069562" duration="63000" />
+      <workItem from="1614242392563" duration="6092000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="651" y="292" width="618" height="522" key="find.popup" timestamp="1605112697600">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="651" y="292" width="618" height="522" key="find.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1605112697600" />
   </component>
 </project>

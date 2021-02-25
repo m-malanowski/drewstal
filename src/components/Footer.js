@@ -16,7 +16,7 @@ const Footer = () => (
                 </ul>
                 <ul>
                     <li >
-                        <div className={footerStyles.icon}><i className='fa fa-facebook'></i></div>
+                        <div className={footerStyles.icon}><a href="https://www.facebook.com/Drewstal-Nowoczesne-Domki-Letniskowe-100851138731748"><i className='fa fa-facebook'></i></a></div>
                     </li>
                     <li>
                         <div className={footerStyles.icon}><i className='fa fa-pinterest p-2'></i></div>

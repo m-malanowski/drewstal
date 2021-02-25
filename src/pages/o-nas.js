@@ -86,7 +86,7 @@ const aboutPage = () => {
 
                     </div>
 
-                    <div className="col-xl-4 col-lg-6">
+                    <div className="col-xl-5 col-lg-6">
                         <h2 className="mt-5">
                             Technologie
                         </h2>

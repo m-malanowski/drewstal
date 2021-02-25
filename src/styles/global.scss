@@ -442,6 +442,7 @@ p {
       display: flex;
       flex-direction: row;
       //width: 100vw;
+      z-index: 1000 !important;
       @include for-phone-only {
         flex-direction: column;
         margin: 0 auto;
@@ -452,6 +453,7 @@ p {
       }
 
       p {
+        z-index: 1000 !important;
         font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1900 - 320)));
         line-height: 1.4;
         color: var(--main-color);
@@ -523,11 +525,11 @@ p {
   /*height: 8vh;*/
   height: 400px;
   width: 100%;
-  z-index: 3;
+  z-index: 1;
   /*transition: all 0.8s;*/
 
   @include for-phone-only {
-    height: 250px !important;
+    height: 450px !important;
   }
 
 
@@ -639,6 +641,10 @@ post {
   .slick-track {
     img {
       transition: all 1s cubic-bezier(0.7, 0, 0.3, 1) !important;
+      -o-object-fit: cover;
+      object-fit: cover;
+      -o-object-position: center center;
+      object-position: center center;
     }
   }
 
@@ -646,12 +652,20 @@ post {
     img {
       transition: all 1s cubic-bezier(0.7, 0, 0.3, 1) !important;
       transform: scale(1.2) !important;
+      -o-object-fit: cover;
+      object-fit: cover;
+      -o-object-position: center center;
+      object-position: center center;
     }
 
     .slick-active {
       img {
         transform: scale(1) !important;
         //animation: animate-slider 4s 1 ease-in-out !important;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: center center;
+        object-position: center center;
       }
     }
   }
@@ -661,6 +675,10 @@ post {
   img {
     width: auto;
     margin: 0 auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center center;
+    object-position: center center;
   }
 }
 
@@ -822,9 +840,22 @@ post {
     }
 
     img {
-      width: 100%;
-      height: auto;
       opacity: .7;
+      top: 0;
+      left: 0;
+      width: 500px;
+      height: 300px;
+      -o-object-fit: cover;
+      object-fit: cover;
+      -o-object-position: center center;
+      object-position: center center;
+      @include for-tablet-landscape-up {
+        width: 300px;
+        height: 200px;
+      }
+      @include for-phone-only {
+        width: 300px;
+      }
     }
 
     p {

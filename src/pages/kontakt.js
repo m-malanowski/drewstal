@@ -51,7 +51,7 @@ const contactPage = () => (
                     <p>TEL: +48 666 743 003</p>
                     <p>EMAIL: <a href="mailto:kontakt@grgroup.pl">kontakt@grgroup.pl</a></p>
                     <p>GODZINY OTWARCIA: <br/> Pn-pt: 8:00 - 18:00, <br/> Sobota: 8:00 - 14:00 </p>
-                    <p className="mt-5 find"><a href="#">Tu nas znajdziesz</a></p>
+                    <p className="mt-5 find"><a href="https://g.page/drewstal?gm">Tu nas znajdziesz</a></p>
                 </motion.div>
                 {/*<div className="gradient top-gradient"></div>*/}
 

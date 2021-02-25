@@ -40,10 +40,19 @@ module.exports = {
         restApiRoutePrefix: "wp-json",
       },
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-CK2J2Z6HY1" // Google Analytics / GA
+        ],
+      },
+    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-robots-txt",
     "gatsby-plugin-netlify",
     "gatsby-plugin-sharp",
+    `gatsby-plugin-sitemap`,
     {
       resolve: "gatsby-plugin-netlify-cache",
       options: {
@@ -61,6 +70,9 @@ module.exports = {
         background_color: `#F8F9FA`,
         theme_color: `#FFFFFF`,
         display: `standalone`,
+        icon_options: {
+          purpose: `maskable`,
+        },
       },
     },
     `gatsby-plugin-offline`

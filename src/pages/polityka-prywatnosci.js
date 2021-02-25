@@ -9,7 +9,7 @@ const policyPage = ({data}) => {
 
     return (
         <>
-            <SEO title="Domki Drewniane Całoroczne Bez Pozwolenia | O nas"
+            <SEO title="Domki Drewniane Bez Pozwolenia | Polityka Prywatności"
                  description="Oferujemy nowoczesne domy drewniane całoroczne lub letniskowe bez pozwolenia"
             />
 
