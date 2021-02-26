@@ -8,6 +8,7 @@ import {Link} from "gatsby"
 import ImagesOverDescription from "../components/ImagesOverDescription";
 // import innertext from "innertext";
 import TriggerText from "../components/TriggerText";
+import TriggerImg from "../components/TriggerImg";
 import ImagesScrollingEffects from "../components/ImagesScrollingEffects";
 // import AboutPicture3 from "../assets/imgs/domek-letniskowy-21.jpg";
 
@@ -74,12 +75,12 @@ const IndexPage = () => {
                             transition: {delay: 2.2, ...transition},
                         }}
                         className="scrolldown">
-                        <div className="line"></div>
+                        <div className="line"/>
                     </motion.div>
 
                     <div className="carousel-container">
                         <IndexHeaderCarousel/>
-                        <div className="gradient bottom-gradient"></div>
+                        <div className="gradient bottom-gradient"/>
                     </div>
                 </div>
 
@@ -114,7 +115,7 @@ const IndexPage = () => {
                     </div>
 
                     <div className="col-md-5 picture-three-container p-5">
-                        <ImagesScrollingEffects scaleValue={1.3} pictureSrc={picture} alt="Domki całoroczne bez pozwolenia"/>
+                        <TriggerImg>  <ImagesScrollingEffects scaleValue={1.3} pictureSrc={picture} alt="Domki całoroczne bez pozwolenia"/> </TriggerImg>
                     </div>
                 </div>
             </section>

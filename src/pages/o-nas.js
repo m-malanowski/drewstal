@@ -3,7 +3,7 @@ import AboutPicture from "../assets/imgs/domek-letniskowy-30.jpg"
 import AboutPicture2 from "../assets/imgs/domek-letniskowy-kontakt.jpg"
 import AboutPicture3 from "../assets/imgs/domek-letniskowy-21.jpg"
 import AboutPicture4 from "../assets/imgs/domek-letniskowy-całoroczny-drewniany.jpg"
-
+import TriggerImg from "../components/TriggerImg";
 import {motion} from "framer-motion";
 import SEO from "../components/SEO";
 import ImagesOverDescription from "../components/ImagesOverDescription";
@@ -53,15 +53,14 @@ const aboutPage = () => {
                             transition: { ...transition},
                         }}
                     >
-
-                        <ImagesScrollingEffects scaleValue={1.3} pictureSrc={AboutPicture} alt="nowoczesne domki letniskowe całoroczne"/>
+                      <ImagesScrollingEffects scaleValue={1.3} pictureSrc={AboutPicture} alt="nowoczesne domki letniskowe całoroczne"/>
                     </motion.div>
                     {/*<div className="gradient bottom-gradient"></div>*/}
                 </div>
 
                 <div className="about-sub-sec first-about-sec">
                     <div className="col-lg-4 image-container">
-                        <ImagesScrollingEffects scaleValue={1.6} pictureSrc={AboutPicture2} alt="nowoczesne domki drewniane bez pozwolenia"/>
+                        <TriggerImg><ImagesScrollingEffects scaleValue={1.6} pictureSrc={AboutPicture2} alt="nowoczesne domki drewniane bez pozwolenia"/></TriggerImg>
                     </div>
                     <div className="col-xl-4 col-lg-6 offset-lg-2 mt-5">
                         <h2>
@@ -83,7 +82,7 @@ const aboutPage = () => {
                 <div className="about-sub-sec sub-sec-second">
 
                     <div className="col-md-6 sub-sec-second">
-                        <ImagesScrollingEffects scaleValue={1.4} pictureSrc={AboutPicture4} alt="gotowe domki letniskowe całoroczne"/>
+                        <TriggerImg><ImagesScrollingEffects scaleValue={1.4} pictureSrc={AboutPicture4} alt="gotowe domki letniskowe całoroczne"/></TriggerImg>
 
                     </div>
 
@@ -103,7 +102,7 @@ const aboutPage = () => {
                     </div>
 
                     <div className="col-md-10 sub-sec-second">
-                        <ImagesScrollingEffects scaleValue={1.4} pictureSrc={AboutPicture3} alt="Domki całoroczne bez pozwolenia"/>
+                        <TriggerImg> <ImagesScrollingEffects scaleValue={1.4} pictureSrc={AboutPicture3} alt="Domki całoroczne bez pozwolenia"/></TriggerImg>
                     </div>
 
                     <div className="col-xl-5 col-lg-7 offset-lg-7 mt-5 about-h1">

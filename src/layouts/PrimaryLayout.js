@@ -51,7 +51,7 @@ const PrimaryLayout = ({children, location}) => (
                     transition: {delay: .8, duration: 0.5},
                 }}
 
-            >DREWSTAL
+            >DREWSTAL.
             </motion.p>
         </motion.div>
 
