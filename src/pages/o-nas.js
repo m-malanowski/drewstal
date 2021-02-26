@@ -8,6 +8,7 @@ import {motion} from "framer-motion";
 import SEO from "../components/SEO";
 import ImagesOverDescription from "../components/ImagesOverDescription";
 import ImagesScrollingEffects from "../components/ImagesScrollingEffects";
+import TriggerText from "../components/TriggerText";
 
 const transition = {duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9]};
 
@@ -64,7 +65,7 @@ const aboutPage = () => {
                     </div>
                     <div className="col-xl-4 col-lg-6 offset-lg-2 mt-5">
                         <h2>
-                              Dlaczegeo DREWSTAL?
+                            <TriggerText>Dlaczegeo DREWSTAL?</TriggerText>
                         </h2>
                         <br/>
                         <p className="mt-5">
@@ -88,7 +89,7 @@ const aboutPage = () => {
 
                     <div className="col-xl-5 col-lg-6">
                         <h2 className="mt-5">
-                            Technologie
+                            <TriggerText>Technologie</TriggerText>
                         </h2>
                         <br/>
                         <p className="mt-5">
@@ -107,7 +108,7 @@ const aboutPage = () => {
 
                     <div className="col-xl-5 col-lg-7 offset-lg-7 mt-5 about-h1">
                         <h1>
-                            Domki drewniane całoroczne bez pozwolenia
+                            <TriggerText> Domki drewniane całoroczne  </TriggerText>    <TriggerText>bez pozwolenia </TriggerText>
                         </h1>
                         <br/>
                         <p className="mt-5">

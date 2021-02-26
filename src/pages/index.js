@@ -7,6 +7,7 @@ import SEO from "../components/SEO";
 import {Link} from "gatsby"
 import ImagesOverDescription from "../components/ImagesOverDescription";
 // import innertext from "innertext";
+import TriggerText from "../components/TriggerText";
 import ImagesScrollingEffects from "../components/ImagesScrollingEffects";
 // import AboutPicture3 from "../assets/imgs/domek-letniskowy-21.jpg";
 
@@ -88,20 +89,13 @@ const IndexPage = () => {
                 <div className="services-container">
                     <p className="technologies">Technologia</p>
                     <ul>
-                        {/*<li>Doświadczenie</li>*/}
-                        {/*<li>Bezpieczeństwo</li>*/}
-                        {/*<li>Design</li>*/}
-                        {/*<li>Komfort </li>*/}
-                        {/*<li>Energooszczędność</li>*/}
-                        {/*<li>Ekologia </li>*/}
-                        {/*<li>Trwałość </li>*/}
-                        <li className="link"><span data-content="Drewno świerkowe">Drewno świerkowe</span></li>
-                        <li className="link"><span data-content="Wilgotność 12%-15%">Wilgotność 12%-15%</span></li>
-                        <li className="link"><span data-content="Wełna mineralna">Wełna mineralna</span></li>
-                        <li className="link"><span data-content="Folia izolacyjna">Folia izolacyjna</span></li>
-                        <li className="link"><span data-content="Płyty karton-gips">Płyty karton-gips</span></li>
-                        <li className="link"><span data-content="Boazeria">Boazeria</span></li>
-                        <li className="link"><span data-content="Płyta OSB">Płyta OSB</span></li>
+                        <TriggerText><li className="link"><span data-content="Drewno świerkowe">Drewno świerkowe</span></li></TriggerText>
+                        <TriggerText><li className="link"><span data-content="Wilgotność 12%-15%">Wilgotność 12%-15%</span></li></TriggerText>
+                        <TriggerText><li className="link"><span data-content="Wełna mineralna">Wełna mineralna</span></li></TriggerText>
+                        <TriggerText><li className="link"><span data-content="Folia izolacyjna">Folia izolacyjna</span></li></TriggerText>
+                        <TriggerText><li className="link"><span data-content="Płyty karton-gips">Płyty karton-gips</span></li></TriggerText>
+                        <TriggerText><li className="link"><span data-content="Boazeria">Boazeria</span></li></TriggerText>
+                        <TriggerText><li className="link"><span data-content="Płyta OSB">Płyta OSB</span></li></TriggerText>
                     </ul>
                 </div>
             </div>
@@ -110,7 +104,7 @@ const IndexPage = () => {
             <section className="section-third">
                 <div className="section-container p-2">
                     <div className="section-third-description col-md-3 pr-lg-5 mr-lg-5">
-                        <h1>Nowoczesne domki letniskowe</h1>
+                        <h1><TriggerText>Nowoczesne</TriggerText> <TriggerText>domki letniskowe</TriggerText></h1>
                         <p className="mt-5">
                             Coraz częściej i coraz chętniej rezygnujemy z ciężkich konstrukcji murowanych na rzecz lekkich domków drewnianych.
                             Gotowe domki drewniane doskonale sprawdzają się również jako obiekty całoroczne.

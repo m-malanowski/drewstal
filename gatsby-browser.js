@@ -1,6 +1,7 @@
 import React from "react";
 import "./src/styles/global.scss";
 import "./node_modules/bootstrap/dist/css/bootstrap.css";
+
 import PrimaryLayout from "./src/layouts/PrimaryLayout";
 
 const transitionDelay = 500;
