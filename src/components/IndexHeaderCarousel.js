@@ -3,12 +3,9 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css";
-import pictureResponsive from "../assets/imgs/domek-letniskowy-37.jpg";
-import pictureResponsive2 from "../assets/imgs/domek-letniskowy-31.jpg";
-import pictureResponsive3 from "../assets/imgs/domek-letniskowy-36.jpg";
-import picture from "../assets/imgs/2x.jpg";
-import picture2 from "../assets/imgs/3x.jpg";
-import picture3 from "../assets/imgs/1x.jpg";
+// import picture from "../assets/imgs/nowoczesny-domek-letniskowy-1.jpg";
+import picture2 from "../assets/imgs/nowoczesne-domki-letniskowe-2.jpg";
+import picture3 from "../assets/imgs/nowoczesne-domki-letniskowe-3.jpg";
 
 import {motion} from "framer-motion";
 // if (typeof window !== 'undefined') {
@@ -111,20 +108,14 @@ const IndexHeaderCarousel = () => {
                         transition: {...transition},
                     }}
                 >
-                    <img src={  getWindowWidth() < 500 ? pictureResponsive : picture}
-
-                    />
+                    <img alt="Nowoczesne domki letniskowe" src={  picture3 }  />
                 </motion.div>
                 <div>
-                    <img src={  getWindowWidth()  < 500 ? pictureResponsive2 : picture2}
-
-                    />
+                    <img alt="Nowoczesne domki letniskowe" src={  picture2 } />
                 </div>
-                <div>
-                    <img src={  getWindowWidth()  < 500 ? pictureResponsive3 : picture3}
-
-                    />
-                </div>
+                {/*<div>*/}
+                {/*    <img alt="Nowoczesne domki letniskowe" src={ picture }/>*/}
+                {/*</div>*/}
             </Slider>
         </div>
     );

@@ -1,5 +1,5 @@
 import React  from "react"
-import picture from "../assets/imgs/domek-letniskowy-całoroczny-drewniany.jpg";
+import picture from "../assets/imgs/domek-letniskowy-całoroczny-drewniany-2.jpg";
 import HousesCarousel from '../components/HousesCarousel'
 import IndexHeaderCarousel from "../components/IndexHeaderCarousel";
 import {motion} from "framer-motion";
