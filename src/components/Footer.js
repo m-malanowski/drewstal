@@ -9,7 +9,7 @@ const Footer = () => (
             <div className={footerStyles.footerInner}>
                 <div className={footerStyles.logo}><a href="http://drewstal.pl">DREWSTAL.</a></div>
                 <ul>
-                    <li><a target="_blank" rel="noreferrer" href="https://lumina.studio">lumina.studio</a></li>
+                    <li>by: <a target="_blank" rel="noopener nofollow" href="https://lumina.studio">lumina.studio</a></li>
                     <li>
                         <Link to="/polityka-prywatnosci">Polityka prywatności</Link>
                     </li>
