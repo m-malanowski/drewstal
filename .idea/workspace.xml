@@ -3,7 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="0e295858-4818-4f32-9398-ceb5a3714e94" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HousesCarousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HousesCarousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/BlogpostLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/BlogpostLayout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/PrimaryLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/PrimaryLayout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/polityka-prywatnosci.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/polityka-prywatnosci.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/projekty.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/projekty.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,11 +42,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../strapi-drewstal" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -56,6 +69,10 @@
       <workItem from="1614242392563" duration="7010000" />
       <workItem from="1614333121439" duration="5803000" />
       <workItem from="1615549619249" duration="73000" />
+      <workItem from="1633946926848" duration="7414000" />
+      <workItem from="1633963051935" duration="4304000" />
+      <workItem from="1633973185941" duration="681000" />
+      <workItem from="1633974601492" duration="5397000" />
     </task>
     <servers />
   </component>

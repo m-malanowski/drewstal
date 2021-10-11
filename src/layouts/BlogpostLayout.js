@@ -6,15 +6,15 @@ import {motion} from "framer-motion";
 
 const transition = {duration: 2.0, ease: [0.83, 0.13, 0.23, 0.96]};
 
-const BlogpostLayout = ({data}) => {
-    const post = data.wordpressPost
+const BlogpostLayout = () => {
+    // const post = data.wordpressPost
     return (
         <div>
             <SEO
-                title={innertext(post.title) + ' | Nowoczesne Domki Letniskowe na Działkę | DREWSTAL'}
-                description={innertext(post.excerpt)}
-                image={post.featured_media.source_url}
-                keywords={post.categories.map(res => res.name).join(", ")}
+                // title={innertext(post.title) + ' | Nowoczesne Domki Letniskowe na Działkę | DREWSTAL'}
+                // description={innertext(post.excerpt)}
+                // image={post.featured_media.source_url}
+                // keywords={post.categories.map(res => res.name).join(", ")}
             />
 
             {/*<Helmet>*/}
@@ -40,7 +40,7 @@ const BlogpostLayout = ({data}) => {
                             opacity: 0,
                             transition: {...transition},
                         }}>
-                        <h2 dangerouslySetInnerHTML={{__html: post.title}}/>
+                        {/*<h2 dangerouslySetInnerHTML={{__html: post.title}}/>*/}
                     </motion.div>
                     {/*<div className="gradient top-gradient"></div>*/}
 
@@ -60,7 +60,7 @@ const BlogpostLayout = ({data}) => {
                             opacity: 0,
                             transition: {...transition},
                         }}>
-                        <img src={post.featured_media.source_url} alt=""/>
+                        {/*<img src={post.featured_media.source_url} alt=""/>*/}
                     </motion.div>
 
 
@@ -75,7 +75,7 @@ const BlogpostLayout = ({data}) => {
                                     <p>Powierzchnia:</p>
                                 </div>
                                 <div className=" area">
-                                    <div className="" dangerouslySetInnerHTML={{__html: post.acf.area}}/>
+                                    {/*<div className="" dangerouslySetInnerHTML={{__html: post.acf.area}}/>*/}
                                     <span> &#13217; </span>
                                 </div>
                             </div>
@@ -85,7 +85,7 @@ const BlogpostLayout = ({data}) => {
                                     <p>Kondygnacje:</p>
                                 </div>
                                 <div className="">
-                                    <div className="" dangerouslySetInnerHTML={{__html: post.acf.storeys}}/>
+                                    {/*<div className="" dangerouslySetInnerHTML={{__html: post.acf.storeys}}/>*/}
                                 </div>
                             </div>
 
@@ -94,7 +94,7 @@ const BlogpostLayout = ({data}) => {
                                     <p>Wymiary domku:</p>
                                 </div>
                                 <div className="">
-                                    <div className="" dangerouslySetInnerHTML={{__html: post.acf.dimensions}}/>
+                                    {/*<div className="" dangerouslySetInnerHTML={{__html: post.acf.dimensions}}/>*/}
                                 </div>
                             </div>
 
@@ -103,7 +103,7 @@ const BlogpostLayout = ({data}) => {
                                     <p>Wysokość ściany:</p>
                                 </div>
                                 <div className="">
-                                    <div className="" dangerouslySetInnerHTML={{__html: post.acf.wall_height}}/>
+                                    {/*<div className="" dangerouslySetInnerHTML={{__html: post.acf.wall_height}}/>*/}
                                 </div>
                             </div>
 
@@ -112,7 +112,7 @@ const BlogpostLayout = ({data}) => {
                                     <p>Wysokość szczytu:</p>
                                 </div>
                                 <div className="">
-                                    <div className="" dangerouslySetInnerHTML={{__html: post.acf.top_height}}/>
+                                    {/*<div className="" dangerouslySetInnerHTML={{__html: post.acf.top_height}}/>*/}
                                 </div>
                             </div>
 
@@ -125,7 +125,7 @@ const BlogpostLayout = ({data}) => {
                             <p>Opis:</p>
                         </div>
                         <div className="col-md-10 content">
-                            <div dangerouslySetInnerHTML={{__html: post.content}}/>
+                            {/*<div dangerouslySetInnerHTML={{__html: post.content}}/>*/}
                         </div>
                     </div>
 
@@ -150,25 +150,25 @@ const BlogpostLayout = ({data}) => {
 
 export default BlogpostLayout
 
-export const query = graphql`
-  query($slug: String!) {
-    wordpressPost(slug: { eq: $slug }) {
-      content
-      title
-      featured_media {
-        source_url
-      }
-      acf{
-        area
-        storeys
-        dimensions
-        wall_height
-        top_height
-      }
-      categories {
-        name
-      }
-      excerpt
-    }
-  }
-`
+// export const query = graphql`
+//   query($slug: String!) {
+//     wordpressPost(slug: { eq: $slug }) {
+//       content
+//       title
+//       featured_media {
+//         source_url
+//       }
+//       acf{
+//         area
+//         storeys
+//         dimensions
+//         wall_height
+//         top_height
+//       }
+//       categories {
+//         name
+//       }
+//       excerpt
+//     }
+//   }
+// `

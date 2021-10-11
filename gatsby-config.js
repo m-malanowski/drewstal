@@ -29,17 +29,33 @@ module.exports = {
     { resolve: `gatsby-transformer-remark` },
     // { resolve: `gatsby-plugin-transition-link` },
     { resolve: 'gatsby-plugin-sass'},
+    // {
+    //   resolve: `gatsby-source-wordpress`,
+    //   options: {
+    //     baseUrl: process.env.API_URL,
+    //     // baseUrl: `drewstal.tech/backend/index.php`,
+    //     // baseUrl: `localhost/mysite.com/index.php`,
+    //     protocol: process.env.API_PROTOCOL,
+    //     hostingWPCOM: false,
+    //     restApiRoutePrefix: "wp-json",
+    //   },
+    // },
     {
-      resolve: `gatsby-source-wordpress`,
+      resolve: `gatsby-source-strapi`,
       options: {
-        baseUrl: process.env.API_URL,
-        // baseUrl: `drewstal.tech/backend/index.php`,
-        // baseUrl: `localhost/mysite.com/index.php`,
-        protocol: process.env.API_PROTOCOL,
-        hostingWPCOM: false,
-        restApiRoutePrefix: "wp-json",
+        apiURL: `https://strapi-drewstal.herokuapp.com`,
+        queryLimit: 1000, // Default to 100
+        // contentTypes : `projects`,
+        //   singleType : `about`
+        //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
+        // collectionTypes: [`projects`],
+        // contentTypes: [`projects`],
+
+        // singleTypes: [],
       },
     },
+
+
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {

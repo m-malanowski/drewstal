@@ -5,8 +5,10 @@ import SEO from "../components/SEO";
 import TriggerText from "../components/TriggerText";
 const transition = {duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9]};
 
-const projectsPage = ({data}) => {
-    return (
+// const projectsPage = ({data}) => {
+const projectsPage = () => {
+
+        return (
         <>
             <SEO title="Producent Domków Letniskowych | Projekty"/>
 
@@ -36,49 +38,49 @@ const projectsPage = ({data}) => {
 
                 </div>
                 <div>
-                    {data.allWordpressPost.nodes.map(node => (
-                        <motion.div key={node.id} className="products-listing"
-                                    initial={{opacity: 0, y: 40}}
-                                    animate={{
-                                        opacity: 1,
-                                        y: 0,
-                                        transition: {delay: .4, ...transition},
-                                    }}
-                                    exit={{
-                                        y: 40,
-                                        transition: { ...transition},
-                                    }}>
-                            <div className=" image-container">
-                                <img src={node.featured_media.source_url} alt={node.featured_media.slug}/>
-                            </div>
-                            <div>
-                                <TriggerText> <p>{node.title}</p> </TriggerText>
-                            </div>
-                            <div>
-                                <TriggerText> <Link to={`../${node.slug}`}><p>Sprawdź</p></Link> </TriggerText>
-                            </div>
-                        </motion.div>
-                    ))}
+                    {/*{data.allWordpressPost.nodes.map(node => (*/}
+                    {/*    <motion.div key={node.id} className="products-listing"*/}
+                    {/*                initial={{opacity: 0, y: 40}}*/}
+                    {/*                animate={{*/}
+                    {/*                    opacity: 1,*/}
+                    {/*                    y: 0,*/}
+                    {/*                    transition: {delay: .4, ...transition},*/}
+                    {/*                }}*/}
+                    {/*                exit={{*/}
+                    {/*                    y: 40,*/}
+                    {/*                    transition: { ...transition},*/}
+                    {/*                }}>*/}
+                    {/*        <div className=" image-container">*/}
+                    {/*            <img src={node.featured_media.source_url} alt={node.featured_media.slug}/>*/}
+                    {/*        </div>*/}
+                    {/*        <div>*/}
+                    {/*            <TriggerText> <p>{node.title}</p> </TriggerText>*/}
+                    {/*        </div>*/}
+                    {/*        <div>*/}
+                    {/*            <TriggerText> <Link to={`../${node.slug}`}><p>Sprawdź</p></Link> </TriggerText>*/}
+                    {/*        </div>*/}
+                    {/*    </motion.div>*/}
+                    {/*))}*/}
                 </div>
             </section>
         </>
     )
 }
 export default projectsPage;
-
-export const query = graphql`
-  {
-  allWordpressPost{
-    nodes {
-      id
-      slug
-      title
-      excerpt
-      featured_media {
-        source_url
-        slug
-      }
-    }
-  }
-}
-`
+//
+// export const query = graphql`
+//   {
+//   allWordpressPost{
+//     nodes {
+//       id
+//       slug
+//       title
+//       excerpt
+//       featured_media {
+//         source_url
+//         slug
+//       }
+//     }
+//   }
+// }
+// `

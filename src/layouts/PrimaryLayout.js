@@ -36,8 +36,8 @@ const PrimaryLayout = ({children, location}) => (
             initial={{opacity: 1}}
             animate={{
                 // display: 'none',
-                // opacity: 0,
-                y: -1000,
+                opacity: 0,
+                // y: -1000,
                 transition: {delay: 1.2, when: "afterChildren", duration: 0.5},
                 transitionEnd: {
                     display: "none",

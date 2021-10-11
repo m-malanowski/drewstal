@@ -28,7 +28,7 @@ export default () => (
               transition: {delay: 2.0, duration: 1},
           }}
           >
-        <div className={headerStyles.logo}><a href="http://drewstal.tech">DREWSTAL.</a></div>
+        <div className={headerStyles.logo}><a href="/">DREWSTAL.</a></div>
         <nav>
           {/*<AnimatePresence initial={false} exitBeforeEnter >*/}
           <ul className="global-nav">

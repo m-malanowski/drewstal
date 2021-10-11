@@ -4,8 +4,8 @@ import SEO from "../components/SEO";
 import {motion} from "framer-motion";
 const transition = {duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9]};
 
-const policyPage = ({data}) => {
-    const post = data.wordpressPage
+const policyPage = () => {
+    // const post = data.wordpressPage
 
     return (
         <>
@@ -38,7 +38,7 @@ const policyPage = ({data}) => {
 
                 </div>
 
-                <div className="content offset-lg-2" dangerouslySetInnerHTML={{__html: post.content}}/>
+                {/*<div className="content offset-lg-2" dangerouslySetInnerHTML={{__html: post.content}}/>*/}
             </section>
 
         </>
@@ -46,11 +46,11 @@ const policyPage = ({data}) => {
 }
 export default policyPage;
 
-export const query = graphql`
-    {
-        wordpressPage {
-            title
-            content
-        }
-    }
-`
+// export const query = graphql`
+//     {
+//         wordpressPage {
+//             title
+//             content
+//         }
+//     }
+// `
