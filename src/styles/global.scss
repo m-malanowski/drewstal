@@ -501,6 +501,7 @@ p {
       @include for-tablet-landscape-up {
         max-width: 100%;
       }
+      padding-top: 1.5rem;
       color: var(--secondary-coolor);
       max-width: 65%;
       margin-bottom: 5rem;

@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0e295858-4818-4f32-9398-ceb5a3714e94" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/PrimaryLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/PrimaryLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/projekty.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/projekty.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +77,7 @@
       <workItem from="1634033181529" duration="11000" />
       <workItem from="1634035773214" duration="898000" />
       <workItem from="1634037776602" duration="707000" />
-      <workItem from="1634051823995" duration="2260000" />
+      <workItem from="1634051823995" duration="2728000" />
     </task>
     <servers />
   </component>
