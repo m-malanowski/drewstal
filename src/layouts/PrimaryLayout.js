@@ -1,10 +1,7 @@
 import React from "react"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-// import SEO from "../components/SEO"
 import {motion, AnimatePresence} from "framer-motion";
-// import Scroll from "../components/LocomotiveScroll";
-// import Scroll from "../components/LocomotiveScroll"
 
 const duration = .6
 const durationExit = .6
@@ -38,7 +35,7 @@ const PrimaryLayout = ({children, location}) => (
                 // display: 'none',
                 opacity: 0,
                 // y: -1000,
-                transition: {delay: 1.2, when: "afterChildren", duration: 0.5},
+                transition: {delay: 1.0, when: "afterChildren", duration: 0.4},
                 transitionEnd: {
                     display: "none",
                 },
@@ -47,8 +44,8 @@ const PrimaryLayout = ({children, location}) => (
             <motion.p
                 animate={{
                     opacity: 0,
-                    y: -20,
-                    transition: {delay: .8, duration: 0.5},
+                    y: 10,
+                    transition: {delay: .6, duration: 0.6},
                 }}
 
             >DREWSTAL.
@@ -56,7 +53,7 @@ const PrimaryLayout = ({children, location}) => (
         </motion.div>
 
         <main>
-            <div className="container-fullwidth dusted">
+            <div className="container-fullwidth">
                 {/*<div className="row justify-content-md-center">*/}
 
                 <AnimatePresence initial={true} exitBeforeEnter>

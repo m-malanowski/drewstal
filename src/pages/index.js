@@ -13,13 +13,13 @@ import ImagesScrollingEffects from "../components/ImagesScrollingEffects";
 import img1 from "../assets/imgs/nowoczesny-domek-letniskowy-karate.jpg"
 import img2 from "../assets/imgs/nowoczesny-domek-letniskowy-karate2.jpg"
 import img3 from "../assets/imgs/nowoczesny-domek-letniskowy-karate3.jpg"
-
+import { graphql } from "gatsby"
 
 // import AboutPicture3 from "../assets/imgs/domek-letniskowy-21.jpg";
 
 const transition = {duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9]};
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
 
 
     return (
@@ -31,14 +31,14 @@ const IndexPage = () => {
             <section className="section-hero">
                 <div className="index-header">
                     <motion.h2
-                        initial={{opacity: 0, y: -40}}
+                        initial={{opacity: 0, y: 40}}
                         animate={{
                             opacity: 1,
                             y: 0,
                             transition: {delay: 1.5, ...transition},
                         }}
                         exit={{
-                            y: -20,
+                            y: 20,
                             opacity: 0,
                             transition: {...transition},
                         }}
@@ -48,72 +48,77 @@ const IndexPage = () => {
 
             <section className="projects-section">
                 <motion.div
-                    initial={{opacity: 0, y: -30}}
+                    initial={{opacity: 0, y: 40}}
                     animate={{
                         opacity: 1,
                         y: 0,
-                        transition: {delay: 2.2, ...transition},
+                        transition: {delay: 2.0, ...transition},
                     }}
                     exit={{
-                        y: -20,
+                        y: 20,
                         opacity: 0,
                         transition: {...transition},
                     }}
                     className="projects-wrapper">
-                    <article>
-                        <div className="article-wrapper">
-                            {/*<div className="box1 box"></div>*/}
-                            <img src={img1} alt=""/>
-                            <a href="https://karateproject.pl/PROJEKT-DOMKU-ENUR-35m2" rel="noreferrer noopener">
-                                <h2>Projekt domku "Enur" 35m2 </h2>
-                            </a>
-                            <p> freegan health goth, hexagon schlitz. Shaman man bun woke lo-fi.  </p>
-                        </div>
-                    </article>
-                    <article>
-                        <div className="article-wrapper">
-                            {/*<div className="box2 box"></div>*/}
-                            <img src={img3} alt=""/>
 
-                            <h2> Projekt Domku "Pavilon" 35m2</h2>
-                            <p>Semiotics asymmetrical williamsburg shabby chic umami vape. Normcore swag distillery meggings kitsch occupy keytar.</p>
-                        </div>
-                    </article>
-                    <article>
-                        <div className="article-wrapper">
-                            {/*<div className="box3 box"></div>*/}
-                            <img src={img2} alt=""/>
 
-                            <h2> Projekt Domku "Lykke" 35m2</h2>
-                            <p>Brunch gochujang asymmetrical artisan.</p>
-                        </div>
-                    </article>
-                    <article>
-                        <div className="article-wrapper">
-                            {/*<div className="box4 box"></div>*/}
-                            <img src={img3} alt=""/>
+                    {data.allStrapiProjects.nodes.map(node=>(
+                        <article key={node.id}>
+                            <div className="article-wrapper">
+                                <img src={node.image.url} alt="Drewstal"/>
+                                <a href={node.Link} rel="noreferrer noopener">
+                                    <h2>{node.Title}</h2>
+                                </a>
+                                <p>{node.Description}</p>
+                            </div>
+                        </article>
+                    ))}
 
-                            <h2> Projekt Domku "Boho" 35m2</h2>
-                            <p>Mlkshk hexagon blog DIY, man braid man bun chillwave. Brooklyn swag taiyaki keffiyeh organic, bitters knausgaard drinking vinegar. P</p>
-                        </div>
-                    </article>
-                    <article>
-                        <div className="article-wrapper">
-                            {/*<div className="box5 box"></div>*/}
-                            <img src={img1} alt=""/>
 
-                            <h2>Projekt domku "Enur" 35m2 </h2>
-                            <p>Prism organic chicharrones, polaroid freegan vape man braid health goth stumptown yr woke.</p>
-                        </div>
-                    </article>
-                    <article>
-                        <div className="article-wrapper">
-                            {/*<div className="box6 box"></div>*/}
-                            <img src={img2} alt=""/>
-                            <h2>Projekt domku "Enur" 35m2 </h2>
-                            <p>Mlkshk crucifix ugh franzen, beard copper mug slow-carb lyft health goth XOXO. Microdosing pok pok mlkshk messenger bag freegan fingerstache. </p>
-                        </div>
-                    </article>
+                    {/*<article>*/}
+                    {/*    <div className="article-wrapper">*/}
+                    {/*        /!*<div className="box2 box"></div>*!/*/}
+                    {/*        <img src={img3} alt=""/>*/}
+
+                    {/*        <h2> Projekt Domku "Pavilon" 35m2</h2>*/}
+                    {/*        <p>Semiotics asymmetrical williamsburg shabby chic umami vape. Normcore swag distillery meggings kitsch occupy keytar.</p>*/}
+                    {/*    </div>*/}
+                    {/*</article>*/}
+                    {/*<article>*/}
+                    {/*    <div className="article-wrapper">*/}
+                    {/*        /!*<div className="box3 box"></div>*!/*/}
+                    {/*        <img src={img2} alt=""/>*/}
+
+                    {/*        <h2> Projekt Domku "Lykke" 35m2</h2>*/}
+                    {/*        <p>Brunch gochujang asymmetrical artisan.</p>*/}
+                    {/*    </div>*/}
+                    {/*</article>*/}
+                    {/*<article>*/}
+                    {/*    <div className="article-wrapper">*/}
+                    {/*        /!*<div className="box4 box"></div>*!/*/}
+                    {/*        <img src={img3} alt=""/>*/}
+
+                    {/*        <h2> Projekt Domku "Boho" 35m2</h2>*/}
+                    {/*        <p>Mlkshk hexagon blog DIY, man braid man bun chillwave. Brooklyn swag taiyaki keffiyeh organic, bitters knausgaard drinking vinegar. P</p>*/}
+                    {/*    </div>*/}
+                    {/*</article>*/}
+                    {/*<article>*/}
+                    {/*    <div className="article-wrapper">*/}
+                    {/*        /!*<div className="box5 box"></div>*!/*/}
+                    {/*        <img src={img1} alt=""/>*/}
+
+                    {/*        <h2>Projekt domku "Enur" 35m2 </h2>*/}
+                    {/*        <p>Prism organic chicharrones, polaroid freegan vape man braid health goth stumptown yr woke.</p>*/}
+                    {/*    </div>*/}
+                    {/*</article>*/}
+                    {/*<article>*/}
+                    {/*    <div className="article-wrapper">*/}
+                    {/*        /!*<div className="box6 box"></div>*!/*/}
+                    {/*        <img src={img2} alt=""/>*/}
+                    {/*        <h2>Projekt domku "Enur" 35m2 </h2>*/}
+                    {/*        <p>Mlkshk crucifix ugh franzen, beard copper mug slow-carb lyft health goth XOXO. Microdosing pok pok mlkshk messenger bag freegan fingerstache. </p>*/}
+                    {/*    </div>*/}
+                    {/*</article>*/}
 
                 </motion.div>
             </section>
@@ -182,4 +187,22 @@ const IndexPage = () => {
         </>
     )
 }
+
+
+export const query = graphql`
+query ProjectsIndex {
+  allStrapiProjects {
+    nodes {
+      id
+      Description
+      Link
+      Title
+      image: Image {
+        url
+      }
+    }
+  }
+}
+`
+
 export default IndexPage;

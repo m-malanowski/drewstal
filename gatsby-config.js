@@ -19,6 +19,13 @@ module.exports = {
 
   },
   plugins: [
+    `gatsby-plugin-image`,
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-robots-txt",
+    "gatsby-plugin-netlify",
+    "gatsby-plugin-sharp",
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -26,9 +33,8 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+
     { resolve: `gatsby-transformer-remark` },
-    // { resolve: `gatsby-plugin-transition-link` },
-    { resolve: 'gatsby-plugin-sass'},
     // {
     //   resolve: `gatsby-source-wordpress`,
     //   options: {
@@ -46,16 +52,16 @@ module.exports = {
         apiURL: `https://strapi-drewstal.herokuapp.com`,
         queryLimit: 1000, // Default to 100
         // contentTypes : `projects`,
-        //   singleType : `about`
+        // singleType : `private-policy`
+        collectionTypes: ['projects'],
+        singleTypes: ['private-policy'],
         //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
         // collectionTypes: [`projects`],
-        // contentTypes: [`projects`],
 
+        // contentTypes: [`projects`],
         // singleTypes: [],
       },
     },
-
-
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
@@ -64,11 +70,7 @@ module.exports = {
         ],
       },
     },
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-robots-txt",
-    "gatsby-plugin-netlify",
-    "gatsby-plugin-sharp",
-    `gatsby-plugin-sitemap`,
+
     {
       resolve: "gatsby-plugin-netlify-cache",
       options: {

@@ -4,7 +4,7 @@ import {Link} from "gatsby";
 
 const Footer = () => (
     <footer className={footerStyles.footer}>
-        <div className="container-fluid global-footer-container">
+        <div className="global-footer-container">
             <hr/>
             <div className={footerStyles.footerInner}>
                 <div className={footerStyles.logo}><a href="http://drewstal.pl">DREWSTAL.</a></div>
