@@ -43,7 +43,7 @@ export default () => (
                 <NavLink className={headerStyles.link} to="/projekty"><span data-content="Projekty">Projekty</span></NavLink>
             </li>
             <li>
-                <p className={`${headerStyles.link} ${headerStyles.notAllowed}`} to=""><span data-content="Realizacje">Realizacje</span></p>
+                <NavLink className={`${headerStyles.link} `} to="/realizacje"><span data-content="Realizacje">Realizacje</span></NavLink>
             </li>
           </ul>
           {/*</AnimatePresence>*/}

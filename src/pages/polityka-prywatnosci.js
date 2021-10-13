@@ -4,9 +4,7 @@ import SEO from "../components/SEO";
 import {motion} from "framer-motion";
 const transition = {duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9]};
 
-const policyPage = () => {
-    // const post = data.wordpressPage
-
+const policyPage = ({data}) => {
     return (
         <>
             <SEO title="Domki Drewniane Bez Pozwolenia | Polityka Prywatności"
@@ -35,10 +33,9 @@ const policyPage = () => {
                             Polityka Prywatności
                         </motion.h2>
                     </div>
-
                 </div>
 
-                {/*<div className="content offset-lg-2" dangerouslySetInnerHTML={{__html: post.content}}/>*/}
+                <div className="content offset-lg-2" dangerouslySetInnerHTML={{__html: data.strapiPrivatePolicy.Content}}/>
             </section>
 
         </>
@@ -46,11 +43,10 @@ const policyPage = () => {
 }
 export default policyPage;
 
-// export const query = graphql`
-//     {
-//         wordpressPage {
-//             title
-//             content
-//         }
-//     }
-// `
+export const query = graphql`
+    query MyQuery {
+      strapiPrivatePolicy {
+        Content
+      }
+    }
+`

@@ -75,51 +75,6 @@ const IndexPage = ({ data }) => {
                     ))}
 
 
-                    {/*<article>*/}
-                    {/*    <div className="article-wrapper">*/}
-                    {/*        /!*<div className="box2 box"></div>*!/*/}
-                    {/*        <img src={img3} alt=""/>*/}
-
-                    {/*        <h2> Projekt Domku "Pavilon" 35m2</h2>*/}
-                    {/*        <p>Semiotics asymmetrical williamsburg shabby chic umami vape. Normcore swag distillery meggings kitsch occupy keytar.</p>*/}
-                    {/*    </div>*/}
-                    {/*</article>*/}
-                    {/*<article>*/}
-                    {/*    <div className="article-wrapper">*/}
-                    {/*        /!*<div className="box3 box"></div>*!/*/}
-                    {/*        <img src={img2} alt=""/>*/}
-
-                    {/*        <h2> Projekt Domku "Lykke" 35m2</h2>*/}
-                    {/*        <p>Brunch gochujang asymmetrical artisan.</p>*/}
-                    {/*    </div>*/}
-                    {/*</article>*/}
-                    {/*<article>*/}
-                    {/*    <div className="article-wrapper">*/}
-                    {/*        /!*<div className="box4 box"></div>*!/*/}
-                    {/*        <img src={img3} alt=""/>*/}
-
-                    {/*        <h2> Projekt Domku "Boho" 35m2</h2>*/}
-                    {/*        <p>Mlkshk hexagon blog DIY, man braid man bun chillwave. Brooklyn swag taiyaki keffiyeh organic, bitters knausgaard drinking vinegar. P</p>*/}
-                    {/*    </div>*/}
-                    {/*</article>*/}
-                    {/*<article>*/}
-                    {/*    <div className="article-wrapper">*/}
-                    {/*        /!*<div className="box5 box"></div>*!/*/}
-                    {/*        <img src={img1} alt=""/>*/}
-
-                    {/*        <h2>Projekt domku "Enur" 35m2 </h2>*/}
-                    {/*        <p>Prism organic chicharrones, polaroid freegan vape man braid health goth stumptown yr woke.</p>*/}
-                    {/*    </div>*/}
-                    {/*</article>*/}
-                    {/*<article>*/}
-                    {/*    <div className="article-wrapper">*/}
-                    {/*        /!*<div className="box6 box"></div>*!/*/}
-                    {/*        <img src={img2} alt=""/>*/}
-                    {/*        <h2>Projekt domku "Enur" 35m2 </h2>*/}
-                    {/*        <p>Mlkshk crucifix ugh franzen, beard copper mug slow-carb lyft health goth XOXO. Microdosing pok pok mlkshk messenger bag freegan fingerstache. </p>*/}
-                    {/*    </div>*/}
-                    {/*</article>*/}
-
                 </motion.div>
             </section>
 
@@ -131,59 +86,6 @@ const IndexPage = ({ data }) => {
                 </div>
             </section>
 
-            {/*<div className="section-second">*/}
-            {/*    <div className="services-container">*/}
-            {/*        <p className="technologies">Technologia</p>*/}
-            {/*        <ul>*/}
-            {/*            <TriggerText>*/}
-            {/*                <li className="link"><span data-content="Drewno świerkowe">Drewno świerkowe</span></li>*/}
-            {/*            </TriggerText>*/}
-            {/*            <TriggerText>*/}
-            {/*                <li className="link"><span data-content="Wilgotność 12%-15%">Wilgotność 12%-15%</span></li>*/}
-            {/*            </TriggerText>*/}
-            {/*            <TriggerText>*/}
-            {/*                <li className="link"><span data-content="Wełna mineralna">Wełna mineralna</span></li>*/}
-            {/*            </TriggerText>*/}
-            {/*            <TriggerText>*/}
-            {/*                <li className="link"><span data-content="Folia izolacyjna">Folia izolacyjna</span></li>*/}
-            {/*            </TriggerText>*/}
-            {/*            <TriggerText>*/}
-            {/*                <li className="link"><span data-content="Płyty karton-gips">Płyty karton-gips</span></li>*/}
-            {/*            </TriggerText>*/}
-            {/*            <TriggerText>*/}
-            {/*                <li className="link"><span data-content="Boazeria">Boazeria</span></li>*/}
-            {/*            </TriggerText>*/}
-            {/*            <TriggerText>*/}
-            {/*                <li className="link"><span data-content="Płyta OSB">Płyta OSB</span></li>*/}
-            {/*            </TriggerText>*/}
-            {/*        </ul>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
-
-
-            {/*<section className="section-third">*/}
-            {/*    <div className="section-container p-2">*/}
-            {/*        <div className="section-third-description col-md-3 pr-lg-5 mr-lg-5">*/}
-            {/*            <h1><TriggerText>Nowoczesne</TriggerText> <TriggerText>domki letniskowe</TriggerText></h1>*/}
-            {/*            <p className="mt-5">*/}
-            {/*                Coraz częściej i coraz chętniej rezygnujemy z ciężkich konstrukcji murowanych na rzecz*/}
-            {/*                lekkich domków drewnianych.*/}
-            {/*                Gotowe domki drewniane doskonale sprawdzają się również jako obiekty całoroczne.*/}
-            {/*                Jako producent domków letniskowych zawsze sięgamy jedynie po materiały najwyższej jakości.*/}
-            {/*            </p>*/}
-            {/*            <button type="submit"><Link to="/o-nas">Dowiedz się więcej</Link></button>*/}
-            {/*        </div>*/}
-
-            {/*        <div className="col-md-5 picture-three-container p-5">*/}
-            {/*            <TriggerImg> <ImagesScrollingEffects scaleValue={1.3} pictureSrc={picture}*/}
-            {/*                                                 alt="Domki całoroczne bez pozwolenia"/> </TriggerImg>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*</section>*/}
-
-            {/*<ImagesOverDescription trgiggerMoment={.4}/>*/}
-
-            {/*<HousesCarousel/>*/}
         </>
     )
 }

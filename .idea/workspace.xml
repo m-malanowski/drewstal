@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e295858-4818-4f32-9398-ceb5a3714e94" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/realizacje.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/polityka-prywatnosci.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/polityka-prywatnosci.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../strapi-drewstal/drewstal-strapi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -41,6 +46,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/styles" />
     </key>
@@ -77,11 +83,26 @@
       <workItem from="1634033181529" duration="11000" />
       <workItem from="1634035773214" duration="898000" />
       <workItem from="1634037776602" duration="707000" />
-      <workItem from="1634051823995" duration="2728000" />
+      <workItem from="1634051823995" duration="3960000" />
+      <workItem from="1634067032231" duration="178000" />
+      <workItem from="1634129172667" duration="2774000" />
+      <workItem from="1634134382184" duration="1861000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

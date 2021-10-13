@@ -54,7 +54,7 @@ module.exports = {
         // contentTypes : `projects`,
         // singleType : `private-policy`
         collectionTypes: ['projects'],
-        singleTypes: ['private-policy'],
+        singleTypes: ['private-policy', 'realizations'],
         //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
         // collectionTypes: [`projects`],
 
