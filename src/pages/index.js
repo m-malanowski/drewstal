@@ -42,7 +42,7 @@ const IndexPage = ({ data }) => {
                             opacity: 0,
                             transition: {...transition},
                         }}
-                    >Gotowe projekty domów</motion.h2>
+                    >Domy <br/> letniskowe i <br/>  całoroczne</motion.h2>
                 </div>
             </section>
 
@@ -65,8 +65,8 @@ const IndexPage = ({ data }) => {
                     {data.allStrapiProjects.nodes.map(node=>(
                         <article key={node.id}>
                             <div className="article-wrapper">
-                                <img src={node.image.url} alt="Drewstal"/>
-                                <a href={node.Link} rel="noreferrer noopener">
+                                <a target="_blank" href={node.Link} rel="noreferrer noopener"><img src={node.image.url} alt="Drewstal"/></a>
+                                <a target="_blank" href={node.Link} rel="noreferrer noopener">
                                     <h2>{node.Title}</h2>
                                 </a>
                                 <p>{node.Description}</p>

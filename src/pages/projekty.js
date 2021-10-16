@@ -56,7 +56,7 @@ const projectsPage = ({data}) => {
                                 <TriggerText> <p>{node.Title}</p> </TriggerText>
                             </div>
                             <div>
-                                <TriggerText> <Link to={node.Link}><p>Sprawdź</p></Link> </TriggerText>
+                                <TriggerText> <Link target="_blank" to={node.Link}><p>Sprawdź</p></Link> </TriggerText>
                             </div>
                         </motion.div>
                     ))}
