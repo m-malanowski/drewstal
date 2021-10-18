@@ -50,7 +50,7 @@ const contactPage = () => (
                 >
                     <p>TEL: +48 666 743 003</p>
                     <p>EMAIL: <a href="mailto:kontakt@grgroup.pl">kontakt@grgroup.pl</a></p>
-                    <p>GODZINY OTWARCIA: <br/> Pn-pt: 8:00 - 18:00, <br/> Sobota: 8:00 - 14:00 </p>
+                    <p>GODZINY OTWARCIA: <br/> Pn-pt: 8:00 - 18:00, <br/> Sobota: Zamknięte </p>
                     <p className="mt-5 find"><a href="https://g.page/drewstal?gm">Tu nas znajdziesz</a></p>
                 </motion.div>
                 {/*<div className="gradient top-gradient"></div>*/}
@@ -75,7 +75,7 @@ const contactPage = () => (
 
             </motion.div>
             <div className="col-md-5  mr-lg-5 mt-5 section-contact-info-form">
-                <h1>Gotowe domki <br/> letniskowe całoroczne</h1>
+                <h1>Producent domków  <br/> letniskowych i  całorocznych</h1>
                 <p className="mt-5">
                     DREWSTAL to nowoczesne domki letniskowe, dostosowane do Twoich potrzeb!
                     Zaufaj nam! DREWSTAL to nie tylko domki letniskowe. To coś o wiele więcej. Dajemy Ci przede wszystkim możliwość bezpośredniego obcowania z naturą!

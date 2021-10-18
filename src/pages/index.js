@@ -42,7 +42,7 @@ const IndexPage = ({ data }) => {
                             opacity: 0,
                             transition: {...transition},
                         }}
-                    >Domy <br/> letniskowe i <br/>  całoroczne</motion.h2>
+                    >Producent domków  <br/> letniskowych  i  całorocznych</motion.h2>
                 </div>
             </section>
 
