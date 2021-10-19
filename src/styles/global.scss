@@ -540,6 +540,12 @@ p {
     article {
       &:nth-child(3n-6) {
         grid-column-end: span 2;
+        p{
+          max-width: 65%;
+          @include for-tablet-landscape-up {
+            max-width: 100%;
+          }
+        }
       }
     }
 
@@ -553,7 +559,7 @@ p {
       }
       padding-top: 1.5rem;
       color: var(--secondary-coolor);
-      max-width: 65%;
+      //max-width: 65%;
       margin-bottom: 5rem;
     }
 
