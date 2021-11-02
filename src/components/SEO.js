@@ -36,12 +36,12 @@ const SEO = ({title, description, keywords, image}) => (
                     <meta property='og:type' content='website'/>
                     <meta property='og:title' content={seo.title}/>
                     <meta property='og:description' content={seo.description}/>
-                    <meta property='og:url' content='http://drewstal.tech'/>
+                    <meta property='og:url' content='http://drewstal.com.pl'/>
 
                     <meta name="twitter:card" content={seo.title}/>
                     <meta name="twitter:description" content={seo.description}/>
                     <meta name="twitter:title" content={seo.title}/>
-                    <meta name="twitter:image" content="http://drewstal.tech"/>
+                    <meta name="twitter:image" content="http://drewstal.com.pl"/>
 
                 </Helmet>
             )
