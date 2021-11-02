@@ -14,8 +14,8 @@ module.exports = {
     description: "Nowoczesne domki letniskowe i całoroczne drewniane, gotowe domki oraz na zgłoszenie i pod wymiar. Szybkie terminy realizacji, elastyczność. Sprawdź!",
     keywords: "Domki Letniskowe, Budowa Domków Letniskowych",
     image: "src/assets/imgs/icon.png",
-    siteUrl: "http://drewstal.tech",
-    url: "https://www.gatsbyjs.org/",
+    siteUrl: "http://drewstal.com.pl",
+    url: "https://drewstal.com.pl",
 
   },
   plugins: [
