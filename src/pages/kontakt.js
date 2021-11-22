@@ -49,7 +49,7 @@ const contactPage = () => (
                             }}
                 >
                     <p>TEL: +48 663 45 45 45</p>
-                    <p>EMAIL: <a href="mailto:kontakt@grgroup.pl">kontakt@grgroup.pl</a></p>
+                    <p>EMAIL: <a href="mailto:biuro@drewstal.com.pl">biuro@drewstal.com.pl</a></p>
                     <p>GODZINY OTWARCIA: <br/> Pn-pt: 8:00 - 16:00, <br/> Sobota: Zamknięte </p>
                     <p className="mt-5 find"><a href="https://g.page/drewstal?gm">Tu nas znajdziesz</a></p>
                 </motion.div>
